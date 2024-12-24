@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Building a Comprehensive Web Form</title>
+    </head>
+    
+    <body>
+        <h1>Programming Preferences & Experience</h1>
+
+        <form action="/submit" method="post">
+            <label for="favorite_programming_language">Choose your favorite Programming Language:</label>
+            <select name="favorite_programming_language" id="favorite_programming_language" aria-label="Favorite Programming Language">
+                <option value="python">Python</option>
+                <option value="javascript">JavaScript</option>
+                <option value="sql">SQL</option>
+                <option value="c#">C#</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+            </select>
+
+            <br><br>
+
+            <label for="experience">Level of Experience:</label>
+            <input type="radio" id="beginner" name="experience" aria-label="Beginner" value="beginner">
+            <label for="beginner">Beginner</label>
+            <input type="radio" id="intermediate" name="experience" aria-label="Intermediate" value="intermediate">
+            <label for="intermediate">Intermediate</label>
+            <input type="radio" id="advanced" name="experience" aria-label="Advanced" value="advanced">
+            <label for="advanced">Advanced</label>
+
+            <br>
+
+            <p>Choose your Preferred Development Platform:</p>
+            <input type="checkbox" id="web" name="web" aria-label="Web" value="Web">
+            <label for="web">Web</label><br>
+            <input type="checkbox" id="mobile" name="mobile" aria-label="Mobile" value="Mobile">
+            <label for="mobile">Mobile</label><br>
+            <input type="checkbox" id="desktop" name="desktop" aria-label="Desktop" value="Desktop">
+            <label for="desktop">Desktop</label><br>
+
+            <br>
+
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </body>
+</html>
+
+
+
+
+
